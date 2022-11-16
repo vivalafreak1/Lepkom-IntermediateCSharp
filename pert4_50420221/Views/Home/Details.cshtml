@@ -1,0 +1,44 @@
+﻿@model pert4_50420221.Models.Karyawan
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Karyawan</legend>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Name)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Name)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.JoiningDate)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.JoiningDate)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Age)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Age)
+        </div>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
