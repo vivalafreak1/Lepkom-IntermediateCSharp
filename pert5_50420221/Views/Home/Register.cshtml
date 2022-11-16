@@ -1,0 +1,44 @@
+﻿@model pert5_50420221.Models.User
+
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <form id="Form1" runat="server" method="post" style="padding-left: 100px; padding-top: 100px">
+        <div>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h1>Register Form</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.Username)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.Username, new { @class = "form-control", placeholder = "Username" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.Password)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.Password, new { @class = "form-control", placeholder = "Password", @type = "password" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Register" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
